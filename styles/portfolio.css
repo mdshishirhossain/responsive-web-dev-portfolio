@@ -152,102 +152,115 @@ nav li a{
     
 }
 
-
-
-
 .section-title{
-    font-size: 35px;
+    font-size: 1.75rem;
     font-weight: 700;
 }
 
 .section-description{
-    font-size: 18px;
-    line-height: 30px;
-    padding: 20px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    padding: 2rem 0;
 }
 
 main{
     max-width: 1140px;
     margin: 0 auto;
+    padding: 6.5rem 11.5rem;
+    /* border: 1px solid red; */
+    
 }
 
-main section{
-    margin-top: 130px;
-    margin-bottom: 130px;
-}
 
 /* about styles */
 
-.about{
-    padding: 130px 150px;
-    text-align: center;
-    
+.container-about{
+    padding: 6rem 7rem;
+    text-align: center; 
+}
+
+.items-about{
+    border: 2px solid #333;
+    background-color: #fff;
+    padding: .25rem;
 }
 
 .about-items{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .item-title{
-    font-size: 20px;
+    font-size: 1rem;
     margin-bottom: 0;
 }
 
 .item-description{
+    font-family: 1rem;
     font-weight: 700;
-    margin-top: 0;
+}
+
+.skills{
+    margin: 6.5rem 0 0;
+}
+
+.skill-section-description{
+    padding: 1.5rem 5rem 2.5rem;
 }
 
 .skill-container{
     display: flex;
-    gap: 30px;
+    gap: 1.5rem;
+    justify-content: space-between;
 }
 
 .skill{
-    padding: 33px;
+    padding: 1.5rem;
     box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.06);
     border-radius: 5px;
-    margin-top:50px;
+    gap: 1rem;
 
 }
 
 .skill-title{
-    font-size: 20px;
+    font-size: 1rem;
+    margin: 1.5rem 0 1rem;
 }
 
 .skill-description{
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
     
 }
 
 /* Resume Style */
-
+.resume{
+    padding: 6.5rem 0;
+}
 .resume-container{
+    margin-top: 5.6rem;
     display: flex;
-    gap: 24px;
+    gap: 1.2rem;
 }
 
 .resume-column-title{
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 
 .education-title, .experience-title{
-    font-size: 25px;
-    margin: 0;
-    margin-bottom: 10px;
+    font-size: 1.25rem;
+    margin: 1.5rem 0 0.5rem;
 }
 
 .education-subtitle, .experience-subtitle{
-    font-size: 20px;
-    margin: 0;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    
 }
-
 .education-description, .experience-description{
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    margin: 1rem 0 1.5rem;
 }
 
 .resume-download-cv{
@@ -278,8 +291,53 @@ main section{
     display: none;
 }
 
+@media screen and (max-width: 992px){
+    .navbar,
+    .nav-items,
+    .banner{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+    .skill-container{
+        flex-wrap: wrap;    
+    }
+    .about-items{
+        flex-direction: column;
+    }
+
+    main{
+        padding: 5rem 8rem;
+        
+    }
+
+    .container-about{
+        padding: 5rem 8rem;
+    }
+    
+
+    .items-about{
+        padding: 1rem;
+    }
+
+    .about-items{
+        gap: 1rem;
+    }
+
+    .section-description{
+        text-align: justify;
+    }
+
+}
+
 
 @media screen and (max-width: 576px) {
+
+    .skill-container{
+        flex-direction: column;
+    }
 
     .header{
         background-position: 2% 2%, bottom right;
@@ -302,6 +360,29 @@ main section{
     .banner{
         padding: 2rem 2rem 0;
 
+    }
+
+    main{
+        padding: 1rem;
+        
+    }
+    .skill-section-description{
+        padding: 2rem;
+    }
+    .container-about{
+        padding: 2rem;
+    }
+
+    .items-about{
+        padding: 1rem;
+    }
+
+    .about-items{
+        gap: 1rem;
+    }
+
+    .section-description{
+        text-align: justify;
     }
 }
 
@@ -330,12 +411,28 @@ main section{
         padding: 2rem 2rem 0;
 
     } 
+
+    main{
+        padding: 2rem;
+        
+    }
+
+    .container-about{
+        padding: 5rem;
+    }
+
+    .items-about{
+        padding: 1rem;
+    }
+
+    .about-items{
+        gap: 1rem;
+    }
+
+    .section-description{
+        text-align: justify;
+    }
+
+    
 }
 
-@media screen and (max-width: 992px){
-    .navbar,
-    .nav-items,
-    .banner{
-        flex-direction: column;
-    }
-}
