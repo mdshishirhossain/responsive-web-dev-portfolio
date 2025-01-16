@@ -237,7 +237,7 @@ main{
 
 /* Resume Style */
 .resume{
-    padding: 6.5rem 0;
+    padding: 6.5rem 0 0;
 }
 .resume-container{
     margin-top: 5.6rem;
@@ -270,23 +270,48 @@ main{
 }
 
 .footer{
-    padding: 130px 230px;
+    padding: 6.5rem 11.5rem;
     display: flex;
-    gap: 117px;
+    gap: 5.85rem;
 }
 
 .footer-column{
-    width: 50%;
+    flex: 1;
 }
 
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.24rem;
+    margin: 1.4rem 0;   
+}
+
+
 .footer input[type="text"], .footer input[type="email"], .footer textarea {
-    display: block;
-    padding: 18px 30px;
-    width: 80%;
-    font-size: 16px;
+    padding: 0.9rem 1.5rem;
+    font-size: 0.8rem;
     border-radius: 5px;
-    margin-bottom: 24px;
     border: none;
+    outline: none;
+    
+}
+
+.footer input[type="text"]:focus, .footer input[type="email"]:focus, .footer textarea:focus{
+    border: 1px solid #FD6E0A;
+}
+
+.footer-description{
+    font-size: 0.7rem;
+    line-height: 1.4rem;
+    margin: 1rem 0 1.5rem;
+}
+
+.footer-btn{
+    width: 100%;
+}
+
+.footer-icons a{
+    margin-right: 1.25rem;
 }
 
 .hide{
@@ -297,10 +322,12 @@ main{
     .navbar,
     .nav-items,
     .banner,
-    .resume-container{
+    .resume-container,
+    footer{
     
         flex-direction: column;
     }
+
 
 }
 
@@ -393,6 +420,12 @@ main{
         margin-top: 1rem;
         padding: 2rem;
     }
+
+    .footer{
+        padding: 2rem 4rem;
+        gap: 2rem;
+    }
+    
 }
 
 
@@ -441,6 +474,12 @@ main{
     .section-description{
         text-align: justify;
     }
+
+    .footer{
+        padding: 5rem 8rem;
+        gap: 2rem;
+    }
+    
 
     
 }
