@@ -69,7 +69,7 @@ body{
 
 /* header */
 
-.header{
+.header, .footer{
     max-width: 1600px;
     margin: 0 auto;
     background-image: url('../images/developer.png'), url('../images/header_bg.png') ;
