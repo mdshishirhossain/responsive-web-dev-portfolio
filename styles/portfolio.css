@@ -70,6 +70,8 @@ body{
 /* header */
 
 .header{
+    max-width: 1600px;
+    margin: 0 auto;
     background-image: url('../images/developer.png'), url('../images/header_bg.png') ;
     background-repeat: no-repeat;
     background-position: 2%, bottom right;
